@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How i Like games</title>
+    <link rel="stylesheet" type= "text/css" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="toggle active">
+        <div class="ham">
+          <span></span>
+        </div>
+      </div>
+    <div class= "sidebar active">
+      <img src="/images/abstract-isometric-logo-design-free-logo.png">
+        <nav class = "navbar">
+          <a class = "button" href="/index.html">Home</a>
+          <a class = "button" href="galerija.html" >Galerija</a>
+          <a class = "button activeP" href="/pages/about.html">O meni</a>
+        </nav>
+    </div>
+    <div class="content active">
+      <h1>About me</h1>
+      <div class="kontenjer">
+        <div class="grid grid-item1">
+ 
+          <p>
+            Me is me only mee mee
+          </p>
+        </div>
+        <div class="grid grid-item2">
+        <img class ="about-img" src="/images/undraw_about_me_re_82bv.svg">
+        </div>
+
+      </div>
+      
+     
+    </div>
+  </div>
+          <script type="text/javascript">
+            const toggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content');
+
+            toggle.addEventListener('click', () => {
+              toggle.classList.toggle('active');
+              sidebar.classList.toggle('active');
+              content.classList.toggle('active');
+            })
+          </script>
+  </body>
+</html>
